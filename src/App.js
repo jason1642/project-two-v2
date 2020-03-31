@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import {Link, Route} from "react-router-dom"
+import Header from "./components/Header/Header"
+import Business from "./components/Business/Business"
+import Container from "./components/HomePageContainer/Container/Container"
+import axios from "axios"
 
-function App() {
+
+
+
+
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      mainNewsApi : {},
+      multiNewsApi : {},
+      newsCategory : "world"
+    }
+  }
+  componentDidMount = async () => {
+    const API_KEY = "QWjf4uT4S6lcAj8uGFIQ0Xpn6ioy730Q";
+    const response = await axios(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`)
+    
+
+    
+    this.setState({
+      mainNewsApi : response.data.results
+    })
+  }
+    
+  
+
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+    <main>
+      <Container newsArr={this.state.mainNewsApi} />
+    </main>
     </div>
   );
+  }
 }
 
 export default App;
