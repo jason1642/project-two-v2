@@ -1,0 +1,47 @@
+/* Made with help from https://code-boxx.com/html-css-news-ticker-horizontal-vertical/ */
+.text-wrapper-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 7px;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  background-color: #BECCDC;
+}
+
+.ticker-wrap {
+  width: 100%;
+  padding-left: 30%;
+}
+
+.ticker-move {
+  display: inline-block;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tick;
+  animation-duration: 560s;
+  white-space: nowrap;
+  padding-right: 80%;
+}
+
+.ticker-move:hover {
+  cursor: pointer;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 50px;
+  font-size: 2.2em;
+}
+
+@keyframes tick {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0)
+  }
+}

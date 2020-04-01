@@ -1,10 +1,26 @@
-import React from "react"
-import Container from "../HomePageContainer/Container/Container"
+import React, { Component } from "react"
+import Ticker from "./Ticker/Ticker"
+import "./Business.css"
+import ColumnOne from "./ColumnOne/ColumnOne"
+import ColumnTwo from "./ColumnTwo/ColumnTwo"
 
-const Business = props => {
+
+class Business extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render() {
     return (
-        <Container  newsArr={props.newsArr} />
+      <div className="business-container">
+        <Ticker />
+        <ColumnOne />
+        <ColumnTwo />
+      </div>
     )
+  }
 }
 
 export default Business

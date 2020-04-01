@@ -1,0 +1,6 @@
+.business-container {
+  display: grid;
+  width: 100%;
+  background-color: rgb(255, 101, 245);
+  grid-template-rows: 5%;
+}
