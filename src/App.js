@@ -37,7 +37,8 @@ class App extends Component {
     <div className="App">
       <Header />
     <main>
-      <Container newsArr={this.state.mainNewsApi} />
+      <Route exact path="/" render={()=><Container newsArr={this.state.mainNewsApi} />} />
+      <Route exact path="/business" render={routerProps => <Business newsArr={this.state.mainNewsApi}  {...routerProps} />}/>
     </main>
     </div>
   );

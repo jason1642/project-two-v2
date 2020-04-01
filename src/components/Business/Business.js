@@ -1,8 +1,9 @@
 import React from "react"
+import Container from "../HomePageContainer/Container/Container"
 
-const Business = () => {
+const Business = props => {
     return (
-        <h1>Business</h1>
+        <Container  newsArr={props.newsArr} />
     )
 }
 

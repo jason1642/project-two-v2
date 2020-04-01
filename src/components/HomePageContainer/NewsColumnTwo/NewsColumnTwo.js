@@ -24,19 +24,19 @@ componentDidMount = async () => {
         
         console.log(this.state.list)
             return (<>
-                <div className="col-two-img-div">
+                <div onClick={()=>window.open(this.props.newsArr[0].url, "_blank")} className="col-two-img-div">
                 <img className="column-two-img" src={this.props.newsArr[1].multimedia[0].url} />
-                <div className="on-img-label">Opinion</div>  
+                <div className="on-img-label">Just In</div>  
                 </div>
-            <h2 className="col-two-main-title">{this.props.newsArr[1].title}</h2>
+            <h2 onClick={()=>window.open(this.props.newsArr[0].url, "_blank")}className="col-two-main-title">{this.props.newsArr[1].title}</h2>
                 <br />
                 <div className="col-two-ul">
                 <ul>
                     {this.state.list.slice(0,5)}
                 </ul></div>
                 <div className="col-two-story-two">
-                    <img className="col-two-img-two" src={this.props.newsArr[2 ].multimedia[0].url} />
-                    <h2 className="col-two-main-title">{this.props.newsArr[2].title}</h2>
+                    <img onClick={()=>window.open(this.props.newsArr[2].url, "_blank")} className="col-two-img-two" src={this.props.newsArr[2 ].multimedia[0].url} />
+                    <h2 onClick={()=>window.open(this.props.newsArr[2].url, "_blank")} className="col-two-main-title">{this.props.newsArr[2].title}</h2>
                     <div className="col-two-ul2">
                 <ul>
                     {this.state.list.slice(5,10)}

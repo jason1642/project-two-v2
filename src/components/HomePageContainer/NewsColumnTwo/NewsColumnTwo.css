@@ -7,6 +7,9 @@
 .column-two-img {
     width: 100%;
 }
+.column-two-img:hover {
+    cursor: pointer;
+}
 .col-two-img-div{
     margin-top: 10px;
     position: relative;
@@ -39,6 +42,10 @@
     color : rgb(5, 72, 216);
     cursor: pointer;
 }
+.col-two-li{
+    border-bottom: 1px rgb(177, 177, 177) solid;
+    padding-bottom: 10px;
+}
 .col-two-li:hover {
     color : rgb(5, 72, 216);
     cursor: pointer;
@@ -50,4 +57,7 @@
     width: 90%;
     display: block;
     margin: 0 auto;
+}
+.col-two-img-two:hover{
+    cursor: pointer;
 }
