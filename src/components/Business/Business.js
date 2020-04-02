@@ -35,13 +35,13 @@ class Business extends Component {
 
 
     // //volume stocks
-    // const responseThree = await axios(`https://cloud.iexapis.com/stable/stock/market/list/gainers?listLimit=15&token=${API_KEY_TWO}`)
+    const responseThree = await axios(`https://cloud.iexapis.com/stable/stock/market/list/iexvolume?listLimit=14&token=${API_KEY_TWO}`)
 
     
-console.log(response.data)
+console.log(responseThree.data)
 this.setState({
-     stockApi : responseTwo.data
-    //  stockApiTwo : responseThree.data
+     stockApi : responseTwo.data,
+     stockApiTwo : responseThree.data
     })
 
 
