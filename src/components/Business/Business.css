@@ -1,6 +1,28 @@
+/* MAIN NEST */
 .business-container {
   display: grid;
   width: 100%;
-  background-color: rgb(255, 101, 245);
-  grid-template-rows: 5%;
+  grid-template-rows: 10% 1fr;
+}
+
+
+
+
+
+
+/* BUSINESS COLUMN NEST */
+.business-column-nest {
+  display : flex;
+  height: 100%;
+  grid-row: 2/3;
+  flex-direction: row;
+  justify-content: center;
+}
+.business-column-nest > div{
+  border : 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 40px;
 }

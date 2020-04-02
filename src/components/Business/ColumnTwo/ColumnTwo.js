@@ -1,12 +1,13 @@
 import React from "react"
 import "./ColumnTwo.css"
-import ColumnOne from "../ColumnOne/ColumnOne"
 
 const columnTwo = () => {
 
 
   return (
-    <h1>COLUMN TWO</h1>
+    <div className="column-two">
+      <h1>Column</h1>
+        </div>
   )
 }
 

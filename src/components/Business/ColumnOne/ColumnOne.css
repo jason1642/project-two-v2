@@ -1,0 +1,13 @@
+.column-one{
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(205, 232, 255);
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.col-one-img{
+    width: 90%;
+}

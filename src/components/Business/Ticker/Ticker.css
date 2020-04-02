@@ -3,9 +3,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   border-radius: 7px;
-  grid-row: 1/2;
-  grid-column: 1/4;
+  height: 10%;
+  position: absolute;
   display: block;
+  grid-row: 2/3;
   overflow: hidden;
   background-color: white;
   background-color: #BECCDC;
@@ -23,19 +24,22 @@
   animation-name: tick;
   animation-duration: 560s;
   white-space: nowrap;
-  padding-right: 80%;
+  padding-right: 80%; 
+  margin: 28px 0px;
 }
 
-.ticker-move:hover {
-  cursor: pointer;
-}
+
 
 .ticker-item {
+  border: 1px solid black;
+  margin-top: 5px;
   display: inline-block;
   padding: 0 50px;
-  font-size: 2.2em;
+  font-size: 2.65em;
 }
-
+.ticker-item:hover {
+  cursor: pointer;
+}
 @keyframes tick {
   0% {
     transform: translate3d(0, 0, 0);

@@ -1,0 +1,49 @@
+.column-three{
+    height : 100%;
+    width: 18%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.watchlist-labels {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30px;
+}
+.WL-label {
+    width: 25%;
+    border-bottom: slategray 1px solid;
+}
+
+
+/*  */
+
+
+.watchlist-cell {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: slategray 1px solid;
+}
+.watchlist-cell > div{
+    overflow: hidden;
+    border: 1px solid black;
+}
+.watchList-name{    
+    grid-column: 1/2;
+}
+.watchList-price{    
+    grid-column: 2/3;
+}
+.watchList-change{    
+    grid-column: 3/4;
+}
+.watchList-percent-change{    
+    grid-column: 4/5;
+}

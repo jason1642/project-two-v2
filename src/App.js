@@ -22,9 +22,7 @@ class App extends Component {
   componentDidMount = async () => {
     const API_KEY = "QWjf4uT4S6lcAj8uGFIQ0Xpn6ioy730Q";
     const response = await axios(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`)
-    
-
-    
+        
     this.setState({
       mainNewsApi : response.data.results
     })
