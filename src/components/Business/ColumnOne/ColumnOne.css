@@ -2,12 +2,38 @@
     height: 100%;
     width: 33%;
     text-align: center;
-    justify-content: center;
-    background-color: rgb(205, 232, 255);
     overflow: hidden;
     margin-right: 20px;
 }
-
-.col-one-img{
+.business-main-card1 > h1{
+    font-size: 2em;
+}
+.business-col-one-title {
+    font-size: 2em;
+}
+.business-col-one-title:hover {
+    color : rgb(5, 72, 216);
+    cursor: pointer;
+}
+.business-col-one-img1, .business-col-one-img2{
     width: 90%;
+}
+.business-col-one-link-container  {
+    width: 100%;
+}
+.business-col-one-link-container > div {
+    border-bottom : 1px solid black;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width : 100%;
+}
+.business-col-one-link{
+    text-align: left;
+    margin-top: 10px;
+}
+.business-col-one-link:hover{
+    color : rgb(5, 72, 216);
+    cursor: pointer;
 }

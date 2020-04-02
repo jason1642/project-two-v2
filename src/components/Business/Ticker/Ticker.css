@@ -3,7 +3,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   border-radius: 7px;
-  height: 10%;
+  height: 9.5%;
   position: absolute;
   display: block;
   grid-row: 2/3;
@@ -12,6 +12,15 @@
   background-color: #BECCDC;
 }
 
+.ticker-symbol {
+
+}
+.ticker-price{
+
+}
+.ticker-percent {
+
+}
 .ticker-wrap {
   width: 100%;
   padding-left: 30%;
@@ -22,7 +31,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: tick;
-  animation-duration: 560s;
+  animation-duration: 300s;
   white-space: nowrap;
   padding-right: 80%; 
   margin: 28px 0px;
@@ -31,15 +40,12 @@
 
 
 .ticker-item {
-  border: 1px solid black;
   margin-top: 5px;
   display: inline-block;
   padding: 0 50px;
   font-size: 2.65em;
 }
-.ticker-item:hover {
-  cursor: pointer;
-}
+
 @keyframes tick {
   0% {
     transform: translate3d(0, 0, 0);

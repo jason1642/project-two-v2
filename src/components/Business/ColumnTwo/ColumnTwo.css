@@ -1,3 +1,33 @@
 .column-two{
     width: 22%;
 }
+.col-two-newscard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 10px;
+    border-bottom: 1px solid silver;
+}
+.col-two-img {
+    width : 100%;
+}
+.col-two-img:hover {
+    cursor: pointer;
+}
+.col-two-newscard-side1 {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+}
+.col-two-newscard-side2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+}
+.col-two-newscard-side2:hover, .business-col-one-img1:hover{
+    color : rgb(5, 72, 216);
+    cursor: pointer;
+}
+.col-two-newscard-side2 > h3{
+   text-align: left;
+
+}

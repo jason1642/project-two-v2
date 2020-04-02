@@ -4,21 +4,29 @@ import "./ColumnOne.css"
 const columnOne = props => {
 
   let arr = [];
-  const mapNews = () => {
+  const renderLinks = () => {
+
     if(props.newsApi) {
-    props.newsApi.map(ele=>arr.push(<h1>{ele.title}</h1>))
+    props.newsApi.map(ele=>arr.push(<div onClick={()=>window.open(ele.url, '_blank')} className="business-col-one-link">{ele.title}</div>))
     }
-    return arr.slice(0,5);
+    return arr.slice(5,17);
   }
 
   return (<>
     { props.newsApi[1]? 
     <div className="column-one">
-      <div className="business-main-card">
-      <img className="col-one-img" src={props.newsApi[5].urlToImage} />
-      <h1 className="col-one-title">{props.newsApi[0].title}</h1>
+      <div className="business-main-card1">
+      <img  onClick={()=>window.open(props.newsApi[0].url, '_blank')} className="business-col-one-img1" src={props.newsApi[0].multimedia[0].url} />
+      <h1 className="business-col-one-title" onClick={()=>window.open(props.newsApi[0].url, '_blank')} >{props.newsApi[0].title}</h1>
       </div>
-      
+
+      <div className="business-col-one-link-container">
+
+
+        {renderLinks()}
+
+
+      </div>
         </div>
          : <></>
         }

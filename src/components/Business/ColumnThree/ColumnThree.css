@@ -4,7 +4,7 @@
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 
@@ -27,23 +27,26 @@
 .watchlist-cell {
     display: grid;
     width: 100%;
-    height: 50px;
+    height: 60px;
+    margin : 7px 0;
     grid-template-columns: repeat(4,1fr);
     border-bottom: slategray 1px solid;
 }
 .watchlist-cell > div{
     overflow: hidden;
-    border: 1px solid black;
 }
-.watchList-name{    
+.watchlist-name{    
     grid-column: 1/2;
 }
-.watchList-price{    
+.watchlist-name > div{ 
+    height: 40%;
+}
+.watchlist-price{    
     grid-column: 2/3;
 }
-.watchList-change{    
+.watchlist-change{    
     grid-column: 3/4;
 }
-.watchList-percent-change{    
+.watchlist-percent-change{    
     grid-column: 4/5;
 }

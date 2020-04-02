@@ -2,11 +2,9 @@ header {
     position: fixed;
     height: 40px;
     width: 100%;
-    border : 1px solid black;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 10% 1fr 10% 10%;
     background-color: #879FBE;
-    justify-content: space-around;
-    align-items: center;
     z-index: 10;
 }
 header > * {
@@ -14,16 +12,36 @@ header > * {
     border: none;
     height: 100%;
 }
-.search-button {
+.business-button {
+    height: 100%;
     background-color: inherit;
-    color : white;
-    font-size: 1.4em;
+    color: white;
+    font-size: 1.6em;
+    border: none;
+    margin: auto 0px;
+    align-self: flex-end;
 }
-.search-button:hover {
+.business-button-link {
+    grid-column: 4/5;
+}
+.business-button:hover {
     cursor: pointer;
 }
 
+.header-img {
+    height: 100%;
+    width: auto;
+    grid-column: 2/3;
+}
 header > h1 {
     height: 100%;
     color : white;
+}
+.home-link {
+    text-decoration: none;
+    color : white;
+    height: 100%;
+    font-size: 1.6em;
+    align-self: flex-end;
+    grid-column: 5/6;
 }

@@ -6,14 +6,10 @@ const Header = () => {
     return(
         <header>
         
-      <img className="header-img" src="https://cdn3.iconfinder.com/data/icons/abstract-tree-wood-forest-ecology-landscape-eco-gr/1470/green_eco_leaves_circle_logo_eco_recycle-512.png" />
-      <h1 className="header-title">Header</h1>
-      <button className="search-button">World</button>
+      <img className="header-img" src="https://lh3.googleusercontent.com/proxy/skUhB5lhrLqnZM34EAv80Y-ET5oP0MDk6K_OroxLemYomH7k5hlW7SUVDenl67d_WX1zK6HKYvFqeSPpqu5XdSEWCvtWTT9iXQtrmGeCwLZXTLlevilWqnTwmUshv0Q4DujKY2sArt5jjSP2mS8" />
+      {/* <h1 className="header-title">My news website</h1> */}
 
-      <Link to="/business"><button className="search-button">Business</button></Link>
-
-      <button className="search-button">Tech</button>
-      <button className="search-button">Sports</button>
+      <Link className="business-button-link" to="/business"><button className="business-button">Business</button></Link>
       <Link className="home-link" to="/">Home</Link>
     </header>
     )
