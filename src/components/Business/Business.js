@@ -27,15 +27,15 @@ class Business extends Component {
 
 
 
-    //25 most active stocks
-    const API_KEY_TWO = "sk_6c78c6836d0240f585f888b8e84ef757"
-    const responseTwo = await axios(`https://cloud.iexapis.com/stable/stock/market/list/mostactive?listLimit=25&token=${API_KEY_TWO}`)
-    
-    console.log(responseTwo.data)
+      //25 most active stocks
+      const API_KEY_TWO = "sk_6c78c6836d0240f585f888b8e84ef757"
+      const responseTwo = await axios(`https://cloud.iexapis.com/stable/stock/market/list/mostactive?listLimit=25&token=${API_KEY_TWO}`)
+      
+      console.log(responseTwo.data)
 
 
-    // //volume stocks
-    const responseThree = await axios(`https://cloud.iexapis.com/stable/stock/market/list/iexvolume?listLimit=14&token=${API_KEY_TWO}`)
+      // //volume stocks
+      const responseThree = await axios(`https://cloud.iexapis.com/stable/stock/market/list/iexvolume?listLimit=14&token=${API_KEY_TWO}`)
 
     
 console.log(responseThree.data)
