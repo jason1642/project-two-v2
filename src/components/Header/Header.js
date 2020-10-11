@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <header>
       <h1 className='header-title'>Sky News</h1>
-      {/* <img className="header-img" src={penguinLogo.jpeg} /> */}
 
       <Link className="business-button-link" to="/business"><button className="business-button">Business</button></Link>
       <Link className="home-link" to="/"><button className='home-button'>Home</button></Link>
