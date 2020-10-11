@@ -16,7 +16,9 @@ const columnOne = props => {
     { props.newsApi[1]? 
     <div className="column-one">
       <div className="business-main-card1">
+
       <img  onClick={()=>window.open(props.newsApi[0].url, '_blank')} className="business-col-one-img1" src={props.newsApi[0].multimedia[0].url} />
+      
       <h1 className="business-col-one-title" onClick={()=>window.open(props.newsApi[0].url, '_blank')} >{props.newsApi[0].title}</h1>
       </div>
 

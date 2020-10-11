@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  height: 40px;
+  height: 45px;
   width: 100%;
   display: grid;
   grid-template-columns: 10% 10% 1fr 10% 10%;
@@ -14,25 +14,6 @@ header>* {
   height: 100%;
 }
 
-.business-button {
-  height: 100%;
-  background-color: inherit;
-  color: white;
-  font-size: 1.6em;
-  border: none;
-  margin: auto 0px;
-  align-self: flex-end;
-}
-
-.home-button {
-  height: 100%;
-  background-color: inherit;
-  color: white;
-  font-size: 1.6em;
-  border: none;
-  margin: auto 0px;
-  align-self: flex-end;
-}
 
 .business-button-link {
   grid-column: 4/5;
@@ -40,15 +21,6 @@ header>* {
 
 }
 
-.business-button:hover {
-  cursor: pointer;
-}
-
-.header-img {
-  height: 100%;
-  width: auto;
-  grid-column: 2/3;
-}
 
 header>h1 {
   height: 100%;
@@ -56,6 +28,7 @@ header>h1 {
   width: 200px;
   padding-left: 25px;
   color: white;
+  color: rgb(54, 93, 138);
 }
 
 .home-link {
@@ -66,9 +39,6 @@ header>h1 {
   grid-column: 5/6;
 }
 
-.home-button:hover {
-  cursor: pointer;
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -76,11 +46,6 @@ header>h1 {
   .home-link {
     position: relative;
     right: 150px;
-  }
-
-  .header-img {
-    position: absolute;
-    left: -30px;
   }
 
   .home-link {
@@ -94,11 +59,6 @@ header>h1 {
   .business-button-link,
   .home-link {
     position: relative;
-  }
-
-  .header-img {
-    position: absolute;
-    left: -30px;
   }
 
   .business-button-link {

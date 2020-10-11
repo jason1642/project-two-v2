@@ -1,5 +1,6 @@
 .column-two{
     width: 22%;
+    border : 1px solid black;
 }
 .col-two-newscard {
     display: grid;
