@@ -21,7 +21,7 @@ const Header = () => {
   color: white;
   font-size: 200%;
   border: none;
-  margin: auto 0px;
+  margin: auto 20px;
   align-self: flex-end;
   &:hover {
     cursor: pointer;
@@ -29,14 +29,20 @@ const Header = () => {
   }
   `;
 
+  const LinkContainer = styled.div`
+    align-self: flex-end;
+  `
+
   return (
     <header>
       <Title >Sky News</Title>
 
-      <Link className="business-button-link" to="/business">
-        <HeaderButtons className="business-button">Business</HeaderButtons></Link>
-        
-      <Link className="home-link" to="/"><HeaderButtons className='home-button'>Home</HeaderButtons></Link>
+      <LinkContainer>
+        <Link className="business-button-link" to="/business">
+          <HeaderButtons className="business-button">Business</HeaderButtons></Link>
+
+        <Link className="home-link" to="/"><HeaderButtons className='home-button'>Home</HeaderButtons></Link>
+      </LinkContainer>
     </header>
   )
 }
